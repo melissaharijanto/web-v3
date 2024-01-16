@@ -1,8 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from './redux/store';
+import { Mode, switchToDarkMode } from './redux/features/modeSlice';
 
 function App() {
+
+  const mode : Mode = useSelector((state : RootState)=> state.config.mode);
+  const dispatch = useDispatch();
+ 
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -10,14 +18,12 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
+        <button
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          onClick={() => dispatch(switchToDarkMode())}
         >
-          Learn React
-        </a>
+          {mode}
+        </button>
       </header>
     </div>
   );
