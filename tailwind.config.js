@@ -15,7 +15,7 @@ module.exports = {
         'plus-jakarta-sans': ['"Plus Jakarta Sans"', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        'solid': '13px 13px 0 0 rgba(255,255,255,1.0), 13px 13px 0 2px rgba(0,0,0,1.0)',
+        'solid': '13px 13px 0 0 rgba(255,255,255,1.0), 13px 13px 0 1px rgba(0,0,0,1.0)',
       }
     },
   },

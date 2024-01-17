@@ -9,7 +9,7 @@ export const openPage = (link: string) => {
 const HeroComponent = () => {
   return (
     <div
-      className={`bg-light-background bg-cover w-full min-h-[80vh] flex flex-col justify-center rounded-3xl border-2 border-black shadow-solid
+      className={`bg-light-background bg-cover w-full min-h-[80vh] flex flex-col justify-center rounded-3xl border-[1px] border-black shadow-solid
             0 25px 25px 0 2px rgb(1 1 1)]`}>
       <div className="py-10 px-24 w-full flex items-center flex-col justify-center text-center">
         <div className="mb-20">
@@ -27,7 +27,7 @@ const HeroComponent = () => {
             {hero.button1}
           </button>
           <button
-            className={`${fonts.subheading1} ${buttons.rounded} text-white bg-black ml-2`}
+            className={`${fonts.subheading1} ${buttons.rounded} text-white bg-black ml-4`}
             onClick={() => openPage(hero.buttonLink2)}>
             {hero.button2}
           </button>
