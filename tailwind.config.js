@@ -16,6 +16,7 @@ module.exports = {
       },
       boxShadow: {
         'solid': '13px 13px 0 0 rgba(255,255,255,1.0), 13px 13px 0 1px rgba(0,0,0,1.0)',
+        'project': '7px 7px 0 0 rgba(255,255,255,1.0), 7px 7px 0 1px rgba(0,0,0,1.0)',
       }
     },
   },

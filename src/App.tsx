@@ -6,6 +6,7 @@ import { RootState } from './redux/store';
 import { Mode, switchToDarkMode } from './redux/features/modeSlice';
 import HeroComponent from './components/HeroComponent';
 import Hero from './pages/Hero';
+import Projects from './pages/Projects';
 
 function App() {
   const mode: Mode = useSelector((state: RootState) => state.config.mode);
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <Hero />
+      <Projects />
     </div>
   );
 }
