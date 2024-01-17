@@ -4,27 +4,16 @@ import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './redux/store';
 import { Mode, switchToDarkMode } from './redux/features/modeSlice';
+import HeroComponent from './components/HeroComponent';
+import Hero from './pages/Hero';
 
 function App() {
-
-  const mode : Mode = useSelector((state : RootState)=> state.config.mode);
+  const mode: Mode = useSelector((state: RootState) => state.config.mode);
   const dispatch = useDispatch();
- 
-  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <button
-          className="App-link"
-          onClick={() => dispatch(switchToDarkMode())}
-        >
-          {mode}
-        </button>
-      </header>
+    <div>
+      <Hero />
     </div>
   );
 }
