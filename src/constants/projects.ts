@@ -13,7 +13,7 @@ export const projects : Project[] = [
         "image": TravelLog,
         "name": "TravelLog",
         "description": "Travel planner mobile app made with React Native, Firebase and Google Maps API. Tested with React Native Testing Library. Contributed as a full-stack developer.",
-        "link": "",
+        "links": [["Repository", "https://github.com/melissaharijanto/Travel-Log"], ["Documentation", "https://melissaharijanto.github.io/Travel-Log/"]],
     },
     {
         "icon": DefaultIcon,
@@ -21,7 +21,7 @@ export const projects : Project[] = [
         "image": PinusStudy,
         "name": "PINUS Study",
         "description": "Study forum for Indonesian students in NUS, built with React Typescript and Go. Contributed to Figma prototype and UI/UX, frontend development and backend integration.",
-        "link": "",
+        "links": [["Repository", "https://github.com/PINUSTECH-2022/pinus-study-frontend"], ["Deployment", "https://pinus-study.netlify.app/"]],
     },
     {
         "icon": DefaultIcon,
@@ -29,15 +29,15 @@ export const projects : Project[] = [
         "image": Gameroom,
         "name": "GameRoom",
         "description": "Forum for gamers, built with React Typescript and Ruby on Rails. Personal project, contributed as a full-stack developer.",
-        "link": "",
+        "links": [["Frontend Repository", "https://github.com/melissaharijanto/gameroom-frontend"], ["Backend Repository", "https://github.com/melissaharijanto/gameroom-backend"], ["Deployment", "https://gameroom-forum.netlify.app/"]],
     },
     {
         "icon": DefaultIcon,
         "username": "melissaharijanto",
         "image": Classroom360,
         "name": "Classroom360",
-        "description": "A virtual classroom built with React 360. Contributed to the UI. Top 15 Finalist for Lifehack 2023.",
-        "link": "",
+        "description": "A virtual classroom built with React 360. Contributed to the UI development. Top 15 Finalist for Lifehack 2023.",
+        "links": [["Repository", "https://github.com/melissaharijanto/pink-unicorn"], ["Deployment", "https://classroom-360.netlify.app/"]],
     },
     {
         "icon": DefaultIcon,
@@ -45,15 +45,15 @@ export const projects : Project[] = [
         "image": TrackO,
         "name": "TrackO",
         "description": "Order and inventory tracking application built with JavaFX. Contributed to the implementation of some features and the UI.",
-        "link": "",
+        "links": [["Repository", "https://github.com/AY2223S1-CS2103T-W15-3/tp"], ["Documentation", "https://ay2223s1-cs2103t-w15-3.github.io/tp/"], ["Download", "https://github.com/AY2223S1-CS2103T-W15-3/tp/releases/tag/v1.4"]],
     },
     {
         "icon": DefaultIcon,
         "username": "melissaharijanto",
         "image": Feminnovate,
         "name": "Feminnovate",
-        "description": "A job portal to support women who are attempting to pursue a career in STEM. Top 6 Finalist for TCS Sustainathon 2023.",
-        "link": "",
+        "description": "A job portal to support women who are attempting to pursue a career in STEM. Contributed to the frontend. Top 6 Finalist for TCS Sustainathon 2023.",
+        "links": [["Frontend Repository", "https://github.com/melissaharijanto/feminnovate-frontend"], ["Deployment", "https://feminnovate-frontend.vercel.app/"]]
     }
 ]
 
@@ -64,5 +64,5 @@ export interface Project {
     "image": string;
     "name": string;
     "description": string;
-    "link": string;
+    "links": string[][];
 }
