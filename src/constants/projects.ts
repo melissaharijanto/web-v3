@@ -1,10 +1,10 @@
-import TravelLog from "../assets/images/travel-log.png";
-import PinusStudy from "../assets/images/pinus-study.png"
-import Gameroom from "../assets/images/gameroom.png";
-import DefaultIcon from "../assets/images/default-icon.png";
-import Classroom360 from "../assets/images/classroom360.png";
-import TrackO from "../assets/images/track-o.png";
-import Feminnovate from "../assets/images/feminnovate.png";
+import TravelLog from "../assets/images/project/travel-log.png";
+import PinusStudy from "../assets/images/project/pinus-study.png"
+import Gameroom from "../assets/images/project/gameroom.png";
+import DefaultIcon from "../assets/images/project/default-icon.png";
+import Classroom360 from "../assets/images/project/classroom360.png";
+import TrackO from "../assets/images/project/track-o.png";
+import Feminnovate from "../assets/images/project/feminnovate.png";
 
 export const projects : Project[] = [
     {
