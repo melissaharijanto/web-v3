@@ -28,7 +28,7 @@ const ExperienceComponent: React.FC<Experience> = ({
   exp,
 }: Experience): ReactElement => {
   return (
-    <div className="flex flex-col items-center border-black border-[1px] rounded-bl-xl rounded-tr-xl shadow-project p-6 md:px-14 lg:px-18 w-full">
+    <div className="bg-experience bg-cover flex flex-col items-center border-black border-[1px] rounded-bl-xl rounded-tr-xl shadow-project p-6 md:px-14 lg:px-18 w-full">
       {exp.image ? (
         <div className="mb-4">
           <img

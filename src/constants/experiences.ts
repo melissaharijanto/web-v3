@@ -24,7 +24,7 @@ export const experiences : Experience[] = [{
     ],
     "period": "May 2023 - August 2023",
     "type": "Internship",
-   
+    "imageSize": "w-20 rounded-[500px]",
 },{
     "company": "National University of Singapore",
     "role": "Student Teaching Assistance",
@@ -35,7 +35,7 @@ export const experiences : Experience[] = [{
     ],
     "period": "June 2023 - December 2023",
     "type": "Part-time",
-    "imageSize": "w-24",
+    "imageSize": "w-24 rounded-[500px] bg-white p-2",
  }, /* {
 //     "company": "National University of Singapore",
 //     "role": "Teaching Assistant",
