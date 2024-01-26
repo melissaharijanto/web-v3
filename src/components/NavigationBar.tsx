@@ -17,7 +17,7 @@ const NavigationBar: React.FC = (): ReactElement => {
   return (
     <div
       className={`fixed flex w-full backdrop-blur-lg justify-between ${
-        onTop ? 'bg-transparent' : 'bg-white/60'
+        onTop ? 'bg-transparent' : 'bg-white/70'
       }`}>
       <div className="flex justify-center items-center">
         <img
