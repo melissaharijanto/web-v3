@@ -1,6 +1,7 @@
 {
   "name": "web-v3",
   "version": "0.1.0",
+  "homepage": "https://melissaharijanto.github.io/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
@@ -22,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
@@ -46,6 +49,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1"
   }
