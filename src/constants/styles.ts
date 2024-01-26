@@ -7,5 +7,5 @@ export const fonts = {
 }
 
 export const buttons = {
-     "rounded": "border-[1px] border-black w-fit py-3 px-8 cursor-pointer rounded-[300px] hover:bg-white hover:text-black transition-all ease-in",
+     "rounded": "border-[1px] border-black w-fit py-3 px-8 cursor-pointer rounded-[300px] hover:bg-black hover:text-white transition-all ease-in",
 }
