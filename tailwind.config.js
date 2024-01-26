@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'light': "url('./src/assets/images/background/light-background.jpg')",
-        'experience': "url('./src/assets/images/background/experience-background.jpg')"
+        'experience': "url('./src/assets/images/background/experience-background.jpg')",
+        'about': "url(./src/assets/images/background/about-background.jpg)"
       }),
       fontFamily: {
         'archivo': ['"Archivo Black"', ...defaultTheme.fontFamily.sans],
