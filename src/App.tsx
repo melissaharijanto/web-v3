@@ -7,6 +7,7 @@ import Hero from './pages/Hero';
 import Projects from './pages/Projects';
 import Experiences from './pages/Experiences';
 import About from './pages/About';
+import NavigationBar from './components/NavigationBar';
 
 const App: React.FC = (): ReactElement => {
   const mode: Mode = useSelector((state: RootState) => state.config.mode);
@@ -14,6 +15,7 @@ const App: React.FC = (): ReactElement => {
 
   return (
     <div>
+      <NavigationBar />
       <Hero />
       <About />
       <Experiences />
