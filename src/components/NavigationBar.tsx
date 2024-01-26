@@ -40,7 +40,11 @@ const NavigationBar: React.FC = (): ReactElement => {
         <a href={`#${navbar.link4}`} className={`${linkStyle}`}>
           {navbar.link4.toUpperCase()}
         </a>
-        <a href={`${hero.buttonLink1}`} className={`${linkStyle} mr-12`}>
+        <a
+          href={`${hero.buttonLink1}`}
+          target="_blank"
+          rel="noreferrer"
+          className={`${linkStyle} mr-12`}>
           {navbar.link5.toUpperCase()}
         </a>
       </div>
