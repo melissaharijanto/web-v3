@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import { buttons, fonts } from '../constants/styles';
 import navbar from '../constants/navbar';
+import { openPage } from '../components/HeroComponent';
 
 const About: React.FC = (): ReactElement => {
   return (
@@ -13,10 +14,13 @@ const About: React.FC = (): ReactElement => {
       <div className="bg-about bg-cover bg-center border-black border-[1px] p-8 md:p-12 rounded-3xl shadow-project w-[75%] lg:w-[60%] gap-x-8 text-justify grid gap-y-4 md:gap-y-0 md:grid-cols-[3fr_7fr]">
         <div className="flex flex-col w-full order-last md:order-first">
           <button
+            onClick={() => openPage('https://github.com/melissaharijanto')}
             className={`${buttons.rounded} ${fonts.subheading1} w-full mb-2`}>
             GITHUB
           </button>
-          <button className={`${buttons.rounded} ${fonts.subheading1} w-full`}>
+          <button
+            onClick={() => openPage('mailto:melissaharijanto18@gmail.com')}
+            className={`${buttons.rounded} ${fonts.subheading1} w-full`}>
             EMAIL
           </button>
         </div>
