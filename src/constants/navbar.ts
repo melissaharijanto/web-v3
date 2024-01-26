@@ -8,6 +8,7 @@ const navbar = {
     "link2": "about",
     "link3": "experiences",
     "link4": "projects",
+    "link5": "resume",
 }
 
 export default navbar;
