@@ -26,13 +26,13 @@ const NavigationBar: React.FC = (): ReactElement => {
         <a href="#home" className={linkStyle}>
           HOME
         </a>
-        <a href="#home" className={linkStyle}>
+        <a href="#about" className={linkStyle}>
           ABOUT
         </a>
-        <a href="#home" className={linkStyle}>
+        <a href="#experiences" className={linkStyle}>
           EXPERIENCES
         </a>
-        <a href="#home" className={`${linkStyle} mr-8`}>
+        <a href="#projects" className={`${linkStyle} mr-8`}>
           PROJECTS
         </a>
       </div>
