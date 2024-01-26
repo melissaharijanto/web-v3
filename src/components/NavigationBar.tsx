@@ -27,16 +27,16 @@ const NavigationBar: React.FC = (): ReactElement => {
         />
       </div>
       <div className="flex justify-center items-center">
-        <a href={`${navbar.link1}`} className={linkStyle}>
+        <a href={`#${navbar.link1}`} className={linkStyle}>
           {navbar.link1.toUpperCase()}
         </a>
-        <a href={`${navbar.link2}`} className={linkStyle}>
+        <a href={`#${navbar.link2}`} className={linkStyle}>
           {navbar.link2.toUpperCase()}
         </a>
-        <a href={`${navbar.link3}`} className={linkStyle}>
+        <a href={`#${navbar.link3}`} className={linkStyle}>
           {navbar.link3.toUpperCase()}
         </a>
-        <a href={`${navbar.link4}`} className={`${linkStyle} mr-8`}>
+        <a href={`#${navbar.link4}`} className={`${linkStyle} mr-8`}>
           {navbar.link4.toUpperCase()}
         </a>
       </div>
