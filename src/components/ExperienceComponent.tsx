@@ -56,14 +56,14 @@ const ExperienceComponent: React.FC<Experience> = ({
         <hr className="border-[0.5px] border-black/25 w-[65%]"></hr>
         <FormattedParagraph text={exp.description} />
         {exp.techStack ? (
-          <div className="text-start w-full px-2">
+          <div className="text-start w-full">
             <span className={`${fonts['text-normal']} font-bold`}>
-              Skills: &#8202;
+              {/* Skills: &#8202; */}
               {exp.techStack?.map((ts, index) => (
                 <>
                   <FormattedParagraph text={ts} />
                   {index < exp.techStack.length - 1 && (
-                    <span>&#8202;|&#8202;</span>
+                    <span>&#8202;&#8729;&#8202;</span>
                   )}
                 </>
               ))}
