@@ -38,8 +38,8 @@ const About: React.FC = (): ReactElement => {
           <br />
           <br />
           <span className={`${fonts['text-normal']}`}>
-            When I have free time, I love designing graphics; whether it be
-            posters, websites or anything random!
+            When I have free time, I love designing colorful graphics; whether
+            it be posters, websites or anything random!
           </span>
         </div>
       </div>
