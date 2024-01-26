@@ -28,7 +28,7 @@ const HeroComponent = () => {
             {hero.button1}
           </button>
           <button
-            className={`${fonts.subheading1} ${buttons.rounded} text-white bg-black mt-2 md:mt-0 md:ml-2`}
+            className={`${fonts.subheading1} ${buttons.rounded} mt-2 md:mt-0 md:ml-2`}
             onClick={() => openPage(hero.buttonLink2)}>
             {hero.button2}
           </button>
