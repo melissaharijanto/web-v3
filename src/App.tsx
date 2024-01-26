@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Experiences from './pages/Experiences';
 import About from './pages/About';
 import NavigationBar from './components/NavigationBar';
+import Footer from './pages/Footer';
 
 const App: React.FC = (): ReactElement => {
   const mode: Mode = useSelector((state: RootState) => state.config.mode);
@@ -20,6 +21,7 @@ const App: React.FC = (): ReactElement => {
       <About />
       <Experiences />
       <Projects />
+      <Footer />
     </div>
   );
 };
