@@ -2,7 +2,16 @@ import React, { ReactElement } from 'react';
 import { fonts } from '../constants/styles';
 import { Experience } from '../constants/experiences';
 
-const FormattedParagraph: React.FC<string> = ({ text }: string) => {
+interface ExperienceComponentProps {
+  exp: Experience;
+}
+
+interface FormattedParagraphProps {
+  text: string;
+}
+const FormattedParagraph: React.FC<FormattedParagraphProps> = ({
+  text,
+}: FormattedParagraphProps) => {
   const inputString = text;
   const formatString = (input: string) => {
     const parts = input.split('**');
@@ -24,9 +33,9 @@ const FormattedParagraph: React.FC<string> = ({ text }: string) => {
   );
 };
 
-const ExperienceComponent: React.FC<Experience> = ({
+const ExperienceComponent: React.FC<ExperienceComponentProps> = ({
   exp,
-}: Experience): ReactElement => {
+}: ExperienceComponentProps): ReactElement => {
   return (
     <div className="bg-experience bg-cover bg-opacity-25 flex flex-col items-center border-black border-[1px] rounded-bl-xl rounded-tr-xl shadow-project p-6 w-full">
       {exp.image ? (
@@ -59,10 +68,10 @@ const ExperienceComponent: React.FC<Experience> = ({
           <div className="text-start w-full">
             <span className={`${fonts['text-normal']} font-bold`}>
               {/* Skills: &#8202; */}
-              {exp.techStack?.map((ts, index) => (
+              {exp.techStack?.map((ts, index: number) => (
                 <>
                   <FormattedParagraph text={ts} />
-                  {index < exp.techStack.length - 1 && (
+                  {index < exp.techStack!.length - 1 && (
                     <span>&#8202;&#8729;&#8202;</span>
                   )}
                 </>

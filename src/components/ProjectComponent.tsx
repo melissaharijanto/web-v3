@@ -2,7 +2,10 @@ import React, { ReactElement } from 'react';
 import { Project } from '../constants/projects';
 import { fonts } from '../constants/styles';
 
-const ProjectComponent = ({ project }: Project): ReactElement => {
+interface ProjectComponentProps {
+  project: Project;
+}
+const ProjectComponent = ({ project }: ProjectComponentProps): ReactElement => {
   return (
     <div className="flex flex-col rounded-2xl shadow-project border-[1px] border-black">
       <div className="w-100 px-6 py-4 flex items-center">
