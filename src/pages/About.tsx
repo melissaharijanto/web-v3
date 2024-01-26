@@ -26,15 +26,20 @@ const About: React.FC = (): ReactElement => {
         </div>
         <div>
           <span className={`${fonts['text-normal']}`}>
-            My name is Melissa, and I am an undergraduate studying{' '}
-            <strong>Computer Science</strong> in the{' '}
-            <strong>National University of Singapore</strong>. I have experience
-            in <strong>Full Stack Development</strong> as well as using{' '}
-            <strong>GenAI tools</strong>, such as using{' '}
+            I am an undergraduate studying <strong>Computer Science</strong> in
+            the <strong>National University of Singapore</strong>. I have
+            experience in <strong>Full Stack Development</strong> as well as
+            using <strong>GenAI tools</strong>, such as using{' '}
             <strong>ChatGPT API</strong> for development. I am especially
             passionate about <strong>Frontend Development</strong>, whether it
-            is for web or mobile applications. I love applying what I've learnt
-            to real life projects!
+            is for web or mobile applications. I love applying what I have
+            learnt to real life projects.
+          </span>
+          <br />
+          <br />
+          <span className={`${fonts['text-normal']}`}>
+            When I have free time, I love designing graphics; whether it be
+            posters, websites or anything random!
           </span>
         </div>
       </div>
