@@ -10,9 +10,10 @@ const About: React.FC = (): ReactElement => {
       <div className="mb-8 md:mb-14">
         <span className={`${fonts.heading1}`}>ABOUT</span>
       </div>
-      <div className="border-black border-[1px] p-12 rounded-3xl shadow-project w-[75%] lg:w-[60%] gap-x-8 text-justify grid grid-cols-[3fr_7fr]">
-        <div className="grid gap-y-2 w-full">
-          <button className={`${buttons.rounded} ${fonts.subheading1} w-full`}>
+      <div className="bg-about bg-cover bg-center border-black border-[1px] p-8 md:p-12 rounded-3xl shadow-project w-[75%] lg:w-[60%] gap-x-8 text-justify grid gap-y-4 md:gap-y-0 md:grid-cols-[3fr_7fr]">
+        <div className="flex flex-col w-full order-last md:order-first">
+          <button
+            className={`${buttons.rounded} ${fonts.subheading1} w-full mb-2`}>
             GITHUB
           </button>
           <button className={`${buttons.rounded} ${fonts.subheading1} w-full`}>
@@ -21,9 +22,10 @@ const About: React.FC = (): ReactElement => {
         </div>
         <div>
           <span className={`${fonts['text-normal']}`}>
-            My name is Melissa, and I am an undergraduate studying in the
-            National University of Singapore. I have experience in{' '}
-            <strong>Full Stack Development</strong> as well as using{' '}
+            My name is Melissa, and I am an undergraduate studying{' '}
+            <strong>Computer Science</strong> in the{' '}
+            <strong>National University of Singapore</strong>. I have experience
+            in <strong>Full Stack Development</strong> as well as using{' '}
             <strong>GenAI tools</strong>, such as using{' '}
             <strong>ChatGPT API</strong> for development. I am especially
             passionate about <strong>Frontend Development</strong>, whether it
