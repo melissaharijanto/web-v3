@@ -10,7 +10,17 @@ const Footer = () => {
       </span>
 
       <span className={`${fonts['text-normal']} tracking-wide`}>
-        Designed by <strong>Melissa</strong>. View on <strong>GitHub</strong>.
+        Designed by <strong>Melissa</strong>. View on{' '}
+        <strong>
+          <a
+            href="https://github.com/melissaharijanto/melissaharijanto.github.io"
+            target="_blank"
+            rel="noreferrer"
+            className={fonts['text-link']}>
+            GitHub
+          </a>
+        </strong>
+        .
       </span>
     </div>
   );
