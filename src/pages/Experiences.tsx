@@ -9,7 +9,7 @@ const Experiences: React.FC = (): ReactElement => {
       <div className="mb-8 md:mb-14">
         <span className={`${fonts.heading1}`}>EXPERIENCES</span>
       </div>
-      <div className="grid md:grid-cols-2 w-100 gap-x-6 gap-y-6 md:gap-x-8 md:gap-y-8 lg:gap-x-10 lg:gap-y-10">
+      <div className="grid lg:grid-cols-2 w-full lg:w-[80%] gap-y-6 lg:gap-x-6">
         {experiences.map((exp) => (
           <ExperienceComponent exp={exp} />
         ))}
