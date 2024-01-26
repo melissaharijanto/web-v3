@@ -2,10 +2,13 @@ import React, { ReactElement } from 'react';
 import ProjectComponent from '../components/ProjectComponent';
 import { Project, projects } from '../constants/projects';
 import { fonts } from '../constants/styles';
+import navbar from '../constants/navbar';
 
 const Projects: React.FC = (): ReactElement => {
   return (
-    <div className="flex flex-col p-6 md:p-16 lg:p-24 w-100 justify-center items-center">
+    <div
+      id={`${navbar.link4}`}
+      className="flex flex-col p-6 md:p-16 lg:p-24 w-100 justify-center items-center">
       <div className="mb-8 md:mb-14">
         <span className={`${fonts.heading1}`}>PROJECTS</span>
       </div>
