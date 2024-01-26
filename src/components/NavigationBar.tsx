@@ -37,7 +37,7 @@ const NavigationBar: React.FC = (): ReactElement => {
         <a href={`#${navbar.link3}`} className={linkStyle}>
           {navbar.link3.toUpperCase()}
         </a>
-        <a href={`#${navbar.link4}`} className={`${linkStyle} mr-8`}>
+        <a href={`#${navbar.link4}`} className={`${linkStyle} mr-10`}>
           {navbar.link4.toUpperCase()}
         </a>
       </div>
