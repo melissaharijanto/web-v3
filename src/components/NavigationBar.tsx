@@ -27,7 +27,7 @@ const NavigationBar: React.FC = (): ReactElement => {
             <img
               src={navbar['light-mode-logo']}
               alt="logo"
-              className="w-24 md:w-28 mx-6 top-0 my-3 md:my-4"
+              className="w-20 md:w-28 mx-6 top-0 my-3 md:my-4"
             />
           </a>
         </div>
