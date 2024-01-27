@@ -9,7 +9,18 @@ const Footer = () => {
         <strong>Tailwind CSS</strong>.
       </span>
 
-      <span className={`${fonts['text-normal']} tracking-wide`}>
+      <span className={`${fonts['text-normal']} text-center`}>
+        Gradient backgrounds from <strong>Codioful</strong> on{' '}
+        <a
+          href="https://unsplash.com/@codioful"
+          target="_blank"
+          rel="noreferrer"
+          className={fonts['text-link']}>
+          Unsplash
+        </a>
+        .{' '}
+      </span>
+      <span className={`${fonts['text-normal']} text-center`}>
         Designed by <strong>Melissa</strong>. View on{' '}
         <strong>
           <a
