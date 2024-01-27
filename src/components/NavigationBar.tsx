@@ -1,11 +1,25 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import { fonts } from '../constants/styles';
 import navbar from '../constants/navbar';
 import MenuIcon from '@mui/icons-material/Menu';
+import ModeToggleSwitch from './ModeToggleSwitch';
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/store';
+import { Mode } from '../redux/features/modeSlice';
+import colors, { ColorScheme, Colors } from '../constants/colors';
 
 const NavigationBar: React.FC = (): ReactElement => {
-  const linkStyle = `${fonts['text-small']} hover:font-extrabold transition-all ease-in cursor-pointer mx-4`;
+  const mode: Mode = useSelector((state: RootState) => state.config.mode);
+  const textColor: string = `${
+    (colors[mode as keyof Colors] as ColorScheme).text
+  }`;
+  const bgColor: string = `${(colors[mode as keyof Colors] as ColorScheme).bg}`;
 
+  const linkStyle = `${fonts['text-small']} text-${textColor} hover:font-extrabold transition-all ease-in cursor-pointer mx-4`;
+
+  useEffect(() => {
+    console.log(textColor);
+  }, [mode]);
   const [onTop, setOnTop] = useState<boolean>(true);
   const [open, setOpen] = useState<boolean>(false);
 
@@ -17,15 +31,19 @@ const NavigationBar: React.FC = (): ReactElement => {
     }
   });
   return (
-    <div className="flex flex-col fixed w-full">
+    <div className="flex flex-col fixed w-full z-50 ">
       <div
-        className={`z-50 flex backdrop-blur-lg justify-between ${
-          onTop ? 'bg-transparent' : 'bg-white/80'
-        } border-[1px] border-black/10`}>
+        className={`flex backdrop-blur-lg justify-between ${
+          onTop ? 'bg-transparent' : `bg-${bgColor}/80`
+        } border-b-[1px] border-b border-${textColor}/10`}>
         <div className="flex justify-center items-center">
           <a href={`#${navbar.link1}`}>
             <img
-              src={navbar['light-mode-logo']}
+              src={
+                mode === 'LIGHT'
+                  ? navbar['light-mode-logo']
+                  : navbar['dark-mode-logo']
+              }
               alt="logo"
               className="w-20 md:w-28 mx-6 top-0 my-3 md:my-4"
             />
@@ -33,6 +51,7 @@ const NavigationBar: React.FC = (): ReactElement => {
         </div>
         <div className="flex justify-center items-center">
           <div className="hidden md:flex justify-center items-center">
+            <ModeToggleSwitch />
             <a href={`#${navbar.link1}`} className={linkStyle}>
               {navbar.link1.toUpperCase()}
             </a>
