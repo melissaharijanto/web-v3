@@ -11,8 +11,8 @@ const About: React.FC = (): ReactElement => {
       <div className="mb-8 md:mb-14">
         <span className={`${fonts.heading1}`}>ABOUT</span>
       </div>
-      <div className="bg-about bg-cover bg-center border-black border-[1px] p-8 md:p-12 rounded-3xl shadow-project w-[75%] lg:w-[60%] gap-x-8 text-justify grid gap-y-4 md:gap-y-0 md:grid-cols-[3fr_7fr]">
-        <div className="flex flex-col w-full order-last md:order-first">
+      <div className="bg-about bg-cover bg-center border-black border-[1px] p-8 md:p-12 rounded-3xl shadow-project w-full md:w-[70%] lg:w-[60%] gap-x-8 text-justify grid gap-y-4 lg:gap-y-0 lg:grid-cols-[3fr_7fr]">
+        <div className="flex flex-col w-full order-last lg:order-first">
           <button
             onClick={() => openPage('https://github.com/melissaharijanto')}
             className={`${buttons.rounded} ${fonts.subheading1} w-full mb-2`}>
