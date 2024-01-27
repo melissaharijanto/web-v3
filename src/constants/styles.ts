@@ -1,3 +1,4 @@
+
 export const fonts = {
     "heading1" : "text-4xl md:text-6xl lg:text-7xl font-archivo tracking-tighter",
     "subheading1": "font-plus-jakarta-sans font-semibold text-sm md:text-base tracking-widest",
