@@ -21,13 +21,15 @@ const NavigationBar: React.FC = (): ReactElement => {
         onTop ? 'bg-transparent' : 'bg-white/80'
       }`}>
       <div className="flex justify-center items-center">
-        <img
-          src={navbar['light-mode-logo']}
-          alt="logo"
-          className="w-28 mx-6 top-0 my-4"
-        />
+        <a href={`#${navbar.link1}`}>
+          <img
+            src={navbar['light-mode-logo']}
+            alt="logo"
+            className="w-24 md:w-28 mx-6 top-0 my-3 md:my-4"
+          />
+        </a>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="hidden md:flex justify-center items-center">
         <a href={`#${navbar.link1}`} className={linkStyle}>
           {navbar.link1.toUpperCase()}
         </a>
