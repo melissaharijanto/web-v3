@@ -3,9 +3,11 @@ import { fonts } from '../constants/styles';
 
 interface FormattedParagraphProps {
   text: string;
+  className?: string;
 }
 const FormattedParagraph: React.FC<FormattedParagraphProps> = ({
   text,
+  className,
 }: FormattedParagraphProps) => {
   const inputString = text;
   const formatString = (input: string) => {
@@ -21,8 +23,7 @@ const FormattedParagraph: React.FC<FormattedParagraphProps> = ({
   };
 
   return (
-    <span
-      className={`${fonts['text-normal']} text-justify py-4 px-2 leading-6`}>
+    <span className={`${fonts['text-normal']} text-justify ${className}`}>
       {formatString(inputString)}
     </span>
   );

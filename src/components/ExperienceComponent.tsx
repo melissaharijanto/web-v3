@@ -37,14 +37,20 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({
           {exp.period.toUpperCase()}
         </span>
         <hr className="border-[0.5px] border-black/25 w-[65%]"></hr>
-        <FormattedParagraph text={exp.description} />
+        <FormattedParagraph
+          text={exp.description}
+          className="py-4 px-2 leading-6"
+        />
         {exp.techStack ? (
           <div className="text-start w-full">
             <span className={`${fonts['text-normal']} font-bold`}>
               {/* Skills: &#8202; */}
               {exp.techStack?.map((ts, index: number) => (
                 <>
-                  <FormattedParagraph text={ts} />
+                  <FormattedParagraph
+                    text={ts}
+                    className="py-4 px-2 leading-6"
+                  />
                   {index < exp.techStack!.length - 1 && (
                     <span>&#8202;&#8729;&#8202;</span>
                   )}
