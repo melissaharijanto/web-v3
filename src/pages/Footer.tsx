@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { fonts } from '../constants/styles';
+import { Mode } from '../redux/features/modeSlice';
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/store';
+import colors, { ColorScheme, Colors } from '../constants/colors';
 
-const Footer = () => {
+const Footer: React.FC = (): ReactElement => {
+  const mode: Mode = useSelector((state: RootState) => state.config.mode);
+  const textColor: string = `${
+    (colors[mode as keyof Colors] as ColorScheme).text
+  }`;
   return (
-    <div className="w-full py-12 px-6 flex flex-col justify-center items-center">
+    <div
+      className="w-full py-12 px-6 flex flex-col justify-center items-center"
+      style={{ color: textColor }}>
       <span className={`${fonts['text-normal']} text-center`}>
-        Built with <strong>React with Typescript</strong> and{' '}
-        <strong>Tailwind CSS</strong>.
+        Built with <strong>React with Typescript</strong>,{' '}
+        <strong>Redux</strong>, and <strong>Tailwind CSS</strong>.
       </span>
 
       <span className={`${fonts['text-normal']} text-center`}>
