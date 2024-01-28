@@ -15,11 +15,8 @@ const NavigationBar: React.FC = (): ReactElement => {
   }`;
   const bgColor: string = `${(colors[mode as keyof Colors] as ColorScheme).bg}`;
 
-  const linkStyle = `${fonts['text-small']} text-${textColor} hover:font-extrabold transition-all ease-in cursor-pointer mx-4`;
+  const linkStyle = `${fonts['text-small']} hover:font-extrabold transition-all ease-in cursor-pointer mx-4`;
 
-  useEffect(() => {
-    console.log(textColor);
-  }, [mode]);
   const [onTop, setOnTop] = useState<boolean>(true);
   const [open, setOpen] = useState<boolean>(false);
 
@@ -33,9 +30,12 @@ const NavigationBar: React.FC = (): ReactElement => {
   return (
     <div className="flex flex-col fixed w-full z-50 ">
       <div
-        className={`flex backdrop-blur-lg justify-between ${
-          onTop ? 'bg-transparent' : `bg-${bgColor}/80`
-        } border-b-[1px] border-b border-${textColor}/10`}>
+        className={`flex backdrop-blur-lg justify-between
+        } border-b-[1px] border-b`}
+        style={{
+          backgroundColor: onTop ? 'transparent' : `${bgColor}80`,
+          borderColor: `${textColor}20`,
+        }}>
         <div className="flex justify-center items-center">
           <a href={`#${navbar.link1}`}>
             <img
@@ -50,27 +50,40 @@ const NavigationBar: React.FC = (): ReactElement => {
           </a>
         </div>
         <div className="flex justify-center items-center">
-          <div className="hidden md:flex justify-center items-center">
+          <div className="hidden lg:flex justify-center items-center">
             <ModeToggleSwitch />
-            <a href={`#${navbar.link1}`} className={linkStyle}>
+            <a
+              href={`#${navbar.link1}`}
+              className={linkStyle}
+              style={{ color: `${textColor}` }}>
               {navbar.link1.toUpperCase()}
             </a>
-            <a href={`#${navbar.link2}`} className={linkStyle}>
+            <a
+              href={`#${navbar.link2}`}
+              className={linkStyle}
+              style={{ color: `${textColor}` }}>
               {navbar.link2.toUpperCase()}
             </a>
-            <a href={`#${navbar.link3}`} className={linkStyle}>
+            <a
+              href={`#${navbar.link3}`}
+              className={linkStyle}
+              style={{ color: `${textColor}` }}>
               {navbar.link3.toUpperCase()}
             </a>
-            <a href={`#${navbar.link4}`} className={`${linkStyle} mr-10`}>
+            <a
+              href={`#${navbar.link4}`}
+              className={`${linkStyle} mr-10`}
+              style={{ color: `${textColor}` }}>
               {navbar.link4.toUpperCase()}
             </a>
           </div>
-          <div className="md:hidden flex mr-6 relative">
+          <div className="lg:hidden flex mr-6 relative">
             <MenuIcon
               sx={{
                 width: '30px',
                 transform: open ? 'rotate(90deg)' : null,
                 zIndex: 99,
+                color: textColor,
               }}
               onClick={() => setOpen(() => !open)}
             />
@@ -79,29 +92,40 @@ const NavigationBar: React.FC = (): ReactElement => {
       </div>
       <div className="w-full justify-end items-end flex">
         <div
-          className={`md:hidden flex-col ${
+          className={`lg:hidden flex-col ${
             open ? 'flex' : 'hidden'
-          } items-end bg-white/80 mt-2 mr-2 backdrop-blur-lg border-[1px] border-black/10 rounded-xl z-[99]`}>
+          } items-end mt-2 mr-2 backdrop-blur-lg border-[1px] rounded-xl z-[99]`}
+          style={{
+            backgroundColor: `${bgColor}80`,
+            borderColor: `${textColor}20`,
+          }}>
           <a
             href={`#${navbar.link1}`}
-            className={`${linkStyle} p-1 pt-2 border-black/50 `}>
+            className={`${linkStyle} p-1 pt-2 border-black/50`}
+            style={{ color: `${textColor}` }}>
             {navbar.link1.toUpperCase()}
           </a>
           <a
             href={`#${navbar.link2}`}
-            className={`${linkStyle} p-1 border-black/50 `}>
+            className={`${linkStyle} p-1 border-black/50`}
+            style={{ color: `${textColor}` }}>
             {navbar.link2.toUpperCase()}
           </a>
           <a
             href={`#${navbar.link3}`}
-            className={`${linkStyle} p-1 border-black/50 `}>
+            className={`${linkStyle} p-1 border-black/50`}
+            style={{ color: `${textColor}` }}>
             {navbar.link3.toUpperCase()}
           </a>
           <a
             href={`#${navbar.link4}`}
-            className={`${linkStyle} p-1 pb-2 border-black/50 `}>
+            className={`${linkStyle} p-1 pb-2 border-black/50`}
+            style={{ color: `${textColor}` }}>
             {navbar.link4.toUpperCase()}
           </a>
+          <div className="p-1 pb-4">
+            <ModeToggleSwitch />
+          </div>
         </div>
       </div>
     </div>
