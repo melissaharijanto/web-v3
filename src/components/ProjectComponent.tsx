@@ -36,8 +36,8 @@ const ProjectComponent = ({ project }: ProjectComponentProps): ReactElement => {
         </span>
       </div>
       <div
-        className={`w-100 flex border-y-[1px] border-${textColor}`}
-        style={{ color: textColor }}>
+        className={`w-100 flex border-y-[1px]`}
+        style={{ color: textColor, borderColor: textColor }}>
         <img src={project.image} alt={project.name} />
       </div>
       <div className="w-100 p-6 flex flex-col">
