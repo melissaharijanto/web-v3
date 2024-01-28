@@ -14,8 +14,9 @@ import colors, { ColorScheme, Colors } from './constants/colors';
 const App: React.FC = (): ReactElement => {
   const mode: Mode = useSelector((state: RootState) => state.config.mode);
   const bgColor: string = `${(colors[mode as keyof Colors] as ColorScheme).bg}`;
+
   return (
-    <div className={`bg-${bgColor}`}>
+    <div style={{ backgroundColor: bgColor }}>
       <NavigationBar />
       <Hero />
       <About />
