@@ -2,12 +2,12 @@
 
 v3 is **mobile-responsive** and provides both light and dark modes. It consists of *Home*, *About*, *Experiences*, and *Projects*. The previews of the site is shown below:
 
-<img src="./src/assets/previews/light.gif" alt="light-mode">
+<img src="./src/assets/previews/light.gif" alt="light-mode" width="100%">
 
 *Light Mode*
 
 
-<img src="./src/assets/previews/dark.gif" alt="dark-mode">
+<img src="./src/assets/previews/dark.gif" alt="dark-mode" width="100%">
 
 *Dark Mode*
 
