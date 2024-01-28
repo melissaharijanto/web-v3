@@ -1,23 +1,17 @@
 const colors : Colors = {
     "DARK": {
-        "bg": "black",
-        "text": "white",
-        "link": "#0096FF",
-        "link-hover": "#4169E1"
+        "bg": "#1a121b",
+        "text": "#FFFFFF",
     }, 
     "LIGHT": {
-        "bg": "white",
-        "text": "black",
-        "link": "#4169E1",
-        "link-hover": "#0096FF"
+        "bg": "#FFFFFF",
+        "text": "#000000",
     }
 }
 
 export interface ColorScheme {
   "bg": string;
   "text": string;
-  "link": string;
-  "link-hover": string;
 }
 
 export interface Colors {
