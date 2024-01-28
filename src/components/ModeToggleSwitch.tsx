@@ -10,7 +10,7 @@ import {
 } from '../redux/features/modeSlice';
 import colors, { ColorScheme, Colors } from '../constants/colors';
 
-// taken from https://readymadeui.com/tailwind-components/form/switch-button
+// taken from https://readymadeui.com/tailwind-components/form/switch-button and recustomized
 const ModeToggleSwitch: React.FC = (): ReactElement => {
   const mode: Mode = useSelector((state: RootState) => state.config.mode);
   const dispatch = useDispatch();
@@ -34,7 +34,8 @@ const ModeToggleSwitch: React.FC = (): ReactElement => {
         rounded-full peer peer-checked:after:translate-x-full
         after:absolute after:left-[2px] peer-checked:after:border-white 
         after:bg-black after:border-[1px] after:border-black after:rounded-full 
-        after:h-5 after:w-5 after:transition-all peer-checked:border-white peer-checked:border-[1px] peer-checked:bg-black peer-checked:after:bg-white"></div>
+        after:h-5 after:w-5 after:transition-all peer-checked:border-white peer-checked:border-[1px] peer-checked:bg-black peer-checked:after:bg-white"
+        />
       </label>
       <ModeNightIcon sx={{ ml: 1, color: textColor }} />
     </div>
