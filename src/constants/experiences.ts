@@ -7,10 +7,11 @@ export const experiences : Experience[] = [{
     "company": "Singapore Airlines",
     "role": "Full Stack Developer",
     "image": sq,
-    "description": "Coming soon :)",
-    "period": "January 2024 - present",
+    "description": "\u2022 Built a **Streamlit** prototype incorporating **Generative AI** and **prompt engineering** to streamline ideation processes. <br> \u2022 Developed prototype which integrates **WebSockets**, **FastAPI**, and **React** for a real-time chat app with audio input/output using SpeechRecognition and SpeechSynthesis **Web APIs**. <br> \u2022 Contributed to the **frontend development** and the **backend integration** to build a quiz app with **React Typescript** and **FastAPI**.",
+    "period": "January 2024 - June 2024",
     "type": "Internship",
     "imageSize": "w-20 rounded-[500px]",
+    "techStack": ["Streamlit", "Generative AI", "ReactJS", "FastAPI", "Web APIs"]
 },{
     "company": "OCBC",
     "role": "Test Automation Engineer",
@@ -41,7 +42,7 @@ export const experiences : Experience[] = [{
     "company": "NUS Indonesian Students' Association",
     "role": "Frontend Developer & UI/UX",
     "image": pinus,
-    "description": "Built a **prototype** and participated in **frontend development** of a **mobile-responsive** study web forum. **Connected frontend to the backend** and worked together with backend developers to ensure that the requirements are met.",
+    "description": "Built a Figma **wireframe** and participated in **frontend development** of a **mobile-responsive** study web forum. **Connected frontend to the backend** and worked together with backend developers to ensure that the requirements are met.",
     "period": "August 2022 - June 2023",
     "techStack": ["React", "TypeScript", "Figma"]
 }]

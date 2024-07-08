@@ -10,7 +10,7 @@ const FormattedParagraph: React.FC<FormattedParagraphProps> = ({
   className,
 }: FormattedParagraphProps) => {
   const inputString = text;
-  const formatString = (input: string) => {
+  const formatBoldString = (input: string) => {
     const parts = input.split('**');
 
     return parts.map((part, index) => {
@@ -22,6 +22,21 @@ const FormattedParagraph: React.FC<FormattedParagraphProps> = ({
     });
   };
 
+  const formatString = (input: string) => {
+    const parts = input.split('<br>');
+    return parts.map((part, index) => {
+      if (index === 0) {
+        return <>{formatBoldString(part)}</>;
+      } else {
+        return (
+          <>
+            <br />
+            {formatBoldString(part)}
+          </>
+        );
+      }
+    });
+  };
   return (
     <span className={`${fonts['text-normal']} text-justify ${className}`}>
       {formatString(inputString)}
