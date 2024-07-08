@@ -21,7 +21,7 @@ export const projects : Project[] = [
         "image": PinusStudy,
         "name": "PINUS Study",
         "description": "Study forum for Indonesian students in NUS, built with React Typescript and Go. Contributed to Figma prototype and UI/UX, frontend development and backend integration.",
-        "links": [["Repository", "https://github.com/PINUSTECH-2022/pinus-study-frontend"], ["Deployment", "https://pinus-study.netlify.app/"]],
+        "links": [["Repository", "https://github.com/PINUSTECH-2022/pinus-study-frontend"], ["Deployment", "https://pinusstudy.com/"]],
     },
     {
         "icon": DefaultIcon,
