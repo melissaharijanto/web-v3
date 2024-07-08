@@ -31,7 +31,7 @@ const Footer: React.FC = (): ReactElement => {
         .{' '}
       </span>
       <span className={`${fonts['text-normal']} text-center`}>
-        Designed by <strong>Melissa</strong>. View on{' '}
+        Designed by <strong>Melissa Harijanto</strong>. View on{' '}
         <strong>
           <a
             href="https://github.com/melissaharijanto/melissaharijanto.github.io"
